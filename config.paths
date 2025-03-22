@@ -1,0 +1,18 @@
+// config.paths - Path configuration for MSI Analysis Pipeline
+
+params {
+    // Input and output
+    fastq_dir = "."
+    outdir = "./results"
+    
+    // Reference paths
+    bwa_index = "/home/administrator/lifecode/genomes/bwa_hg38"
+    ref_genome = "/home/administrator/lifecode/genomes/bwa_hg38/hg38.fa"
+    cgp_msisensorpro = "/home/administrator/lifecode/genomes/msi/sensorPRO_hg38/CGP/sensorPRO_microsatellites_targeted"
+    cgp60_msisensorpro = "/home/administrator/lifecode/genomes/msi/sensorPRO_hg38/CGP_60/sensorPRO_microsatellites_targeted_CGP60"
+    
+    // Script paths - relative to pipeline base directory
+    lcmsian_script = "$baseDir/bin/lcmsian.py"
+    lcmsipdf_script = "$baseDir/bin/lcmsipdf.py"
+    lcmsirep_script = "$baseDir/bin/lcmsirep.py"
+}
